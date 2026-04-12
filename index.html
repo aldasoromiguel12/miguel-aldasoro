@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="index-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Market</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Computadoras.html">Computadora</a></li>
+            <li><a href="Celulares.html">Celulares</a></li>
+            <li><a href="Tablets.html">Tablets</a></li>
+        </ul>
+        <button class="logout" onclick="cerrarPagina()">Logout</button>
+    </nav>
+
+    <!-- Contenido principal -->
+    <h1>Bienvenido a Market</h1>
+    <section class="categorias">
+        <div class="categoria">
+            <a href="Computadoras.html">Computadoras</a>
+        </div>
+        <div class="categoria">
+            <a href="Celulares.html">Celulares</a>
+        </div>
+        <div class="categoria">
+            <a href="Tablets.html">Tablets</a>
+        </div>
+    </section>
+
+    <script>
+    function cerrarPagina() {
+        if (confirm("¿Deseas cerrar la sesión?")) {
+            window.location.href = "login.html";
+        }
+    }
+    </script>
+</body>
+</html>
