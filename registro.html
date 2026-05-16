@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market - Registro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Market</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Computadoras.html">Computadora</a></li>
-            <li><a href="Celulares.html">Celulares</a></li>
-            <li><a href="Tablets.html">Tablets</a></li>
-        </ul>
-        <button class="logout">Logout</button>
-    </nav>
+    <nav id="navbar"></nav>
 
     
     <h1>Registro</h1>
@@ -38,7 +28,10 @@
         <input type="date" id="fecha" name="fecha" required>
 
         <button type="submit">Registrarse</button>
-        <p class="form-footer"><a href="login.html">¿Ya tienes cuenta? Inicia sesión aquí</a></p>
+        <p class="form-footer"><a href="pages/login.html">¿Ya tienes cuenta? Inicia sesión aquí</a></p>
     </form>
+    <script src="js/data.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/logout.js"></script>
 </body>
 </html>
